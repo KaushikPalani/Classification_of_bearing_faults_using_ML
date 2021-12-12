@@ -26,14 +26,14 @@ The data was obtained from Case Western Research University - Bearing Data Cente
 ### Sampling and Labelling 
 The time series data is split and sampled in lengths of 1681 data per block (nearest perfect square of 1670) which approximates data for one complete rotation. In order to increase the number of samples and capture the features better, the sampling is done in strides of 200, therby enabling overlap of the data between adjacent samples. Also,he classes were labelled and stored as a separate list.
 
-### Feature Extraction 
+### Feature Extraction (SVM)
 For SVM, the following features were extracted from the raw data in MATLAB and used as an input. 
  - Time Domain 
    - max, min, peak-to-peak, mean, variance, standard deviation, root-mean-square, skewness, crest factor, kurtosis
  - Frequency Domain 
    - max frequency value 
    - amplitude of max frequency 
-### Dimensionality Reduction - Principal Component Analysis
+### Dimensionality Reduction - Principal Component Analysis (SVM)
 The features extraced were normalized before performing pca. Only first five principal components were chosen after evaluating the latent values and weightage, thereby reducing the dimension of the input data.  
 
 
