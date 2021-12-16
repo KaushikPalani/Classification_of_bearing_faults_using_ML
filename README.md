@@ -3,6 +3,14 @@
 The goal of this project is to detect and classify the different bearing faults based on the raw vibration data.  
 The data was obtained from Case Western Research University - Bearing Data Center https://engineering.case.edu/bearingdatacenter
 
+## Acomplishments through this project 
+ - Achieved the classification model with 99% accuracy on test data
+ - Choosing the optimal time domain and frequency domain features to increase accuracy in SVM 
+ - Tuning (Hyper parameter) of sampling stride length (Data augmentation) on the time series data for improved accuracy 
+ - Faster training when time-series data is fed as 2D image in 2D CNN 
+ - k-fold cross validation to prevent over-fitting 
+ - Understanding the principles of PCA and the working of SOFM
+
 ## Daset Information
  - Drive End Bearing 
  - Sampling frequency - 48,000 samples/sec 
@@ -24,7 +32,7 @@ The data was obtained from Case Western Research University - Bearing Data Cente
 
 ## Data Pre-Processing 
 ### Sampling and Labelling 
-The time series data is split and sampled in lengths of 1681 data per block (nearest perfect square of 1670) which approximates data for one complete rotation. In order to increase the number of samples and capture the features better, the sampling is done in strides of 200, therby enabling overlap of the data between adjacent samples. Also,he classes were labelled and stored as a separate list.
+The time series data is split and sampled in lengths of 1681 data per block (nearest perfect square of 1670) which approximates data for one complete rotation. In order to increase the number of samples and capture the features better, the sampling is done in strides of 200, therby enabling overlap of the data between adjacent samples. Also, the classes were labelled and stored as a separate list.
 
 ### Feature Extraction (SVM)
 For SVM, the following features were extracted from the raw data in MATLAB and used as an input. 
