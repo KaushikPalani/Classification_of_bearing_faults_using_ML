@@ -4,7 +4,7 @@ The goal of this project is to detect and classify the different bearing faults 
 The data was obtained from Case Western Research University - Bearing Data Center https://engineering.case.edu/bearingdatacenter
 
 ## Acomplishments through this project 
- - Achieved the classification model with 99% accuracy on test data
+ - Achieved the classification model with 96% accuracy on test data
  - Choosing the optimal time domain and frequency domain features to increase accuracy in SVM 
  - Tuning (Hyper parameter) of sampling stride length (Data augmentation) on the time series data for improved accuracy 
  - Faster training when time-series data is fed as 2D image in 2D CNN 
